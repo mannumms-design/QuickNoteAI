@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h2>{{ note.title }}</h2>
+
+    <div class="summary-box">
+        <h3>🧠 AI Summary</h3>
+        <ul>
+            {% for line in note.summary.split('\n') %}
+                {% if line.startswith('-') %}
+                    <li>{{ line[1:].strip() }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="content-box">
+        <h3>📝 Full Note</h3>
+        <p>{{ note.content }}</p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Your Notes</h2>
+
+<div class="notes-grid">
+{% for note in notes %}
+    <div class="note-card">
+        <h3>{{ note.title }}</h3>
+
+        <ul>
+            {% for line in note.summary.split('\n')[:3] %}
+                {% if line.startswith('-') %}
+                    <li>{{ line[1:].strip() }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+        <div class="actions">
+            <a href="/note/{{ note.id }}">View</a>
+            <a class="danger" href="/delete/{{ note.id }}">Delete</a>
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

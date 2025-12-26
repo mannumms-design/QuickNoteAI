@@ -1,0 +1,26 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+dev/
+.dev/
+
+# Flask instance folder
+instance/
+*.sqlite3
+
+# Logs
+*.log
+
+# OS / Editor files
+.DS_Store
+.vscode/
+
+# Environment variables
+.env
+
+#Others
+QuickNoteAI.txt

@@ -19,3 +19,14 @@ ChatGPT doesn’t remember this for them.
 
 You would need OPENAI_API_KEY to run in your local.
 
+View Project Images at - 
+### Home Page
+![Home Page](images/HomePage.png)
+
+### View Page
+![View Page](images/ViewPage.png)
+
+### Create Note Page
+![Create note](images/CreateNotePage.png)
+
+

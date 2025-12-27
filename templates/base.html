@@ -5,12 +5,18 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>QuickNoteAI</h1>
+    <header class="app-header">
+    <div class="logo">
+        🧠 <span>QuickNoteAI</span>
+    </div>
+
     <nav>
-        <a href="/">Home</a> |
-        <a href="/create">Create Note</a>
+        <a href="/">Notes</a>
+        <a href="/create">Create</a>
     </nav>
-    <hr>
+</header>
+
+<hr class="divider">
     {% block content %}{% endblock %}
 </body>
 </html>
